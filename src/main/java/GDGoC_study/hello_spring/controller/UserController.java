@@ -1,6 +1,6 @@
 package GDGoC_study.hello_spring.controller;
 
-import GDGoC_study.hello_spring.model.User;
+import GDGoC_study.hello_spring.entity.User;
 import GDGoC_study.hello_spring.service.UserService;
 import org.springframework.web.bind.annotation.*;
 

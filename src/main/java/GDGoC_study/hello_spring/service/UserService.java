@@ -1,18 +1,17 @@
 package GDGoC_study.hello_spring.service;
 
-import GDGoC_study.hello_spring.model.User;
+import GDGoC_study.hello_spring.entity.User;
 import GDGoC_study.hello_spring.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
     private final UserRepository repository;
 
-    public UserService(UserRepository repository) {
-        this.repository = repository;
-    }
     //회원가입
     public User createUser(String email, String nickname, String password) {
         User user = new User(null, email, nickname, password);
